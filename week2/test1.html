@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>week2</title>
+		<style type="text/css">
+			body{
+				background:url(images/bg.jpg) no-repeat center center;
+			}
+			.logo{
+				margin-left: 80px;
+				margin-top:10px;
+				width:700px;
+			}
+			.button_left{
+				margin-left: 280px;
+			}
+			.button_right{
+				margin-left: 30px;
+			}
+			p{
+				text-align: center;
+			}
+			table{
+				/*padding；5px;*/
+				border: 1px solid #000;
+				margin:30px auto;
+			}
+			h1,h2{
+				font-family: ;
+			}
+			.check{
+				text-align: center;
+			}
+			.register{
+				font-weight: bold;
+				font-size:18px;
+			}
+			td{
+				padding:5px;
+			}
+			a{
+				-webkit-transition:all .24s;
+				transition:all .24s;
+				text-decoration:none;
+				color:#333;
+			}
+			a:hover{
+				text-decoration:none;
+				color:#f77b83;
+			}
+		</style>
+	</head>
+	<body>
+
+		<table width="60%" cellspacing="0" cellpadding="0" border="1">
+				<tr>
+					<td colspan="2">
+						<img src="./images/logo.png" alt="logo" class="logo">
+						<h1>北京欢迎你</h1>
+						<h2>有梦想谁都了不起</h2>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>导航</span>
+						<ul>
+							<li><a href="#">登录</a></li>
+							<li><a href="#">注册新用户</a></li>
+						</ul>
+					</td>
+					<td>
+						<form action="#" method="post">
+							<table width="100%" cellspacing="0" cellpadding="0" border="1">
+								<tr>
+									<td colspan="4">
+										<p class="register">用户注册</p>
+									</td>
+								</tr>
+								<tr>
+									<td><span>用户名:</span></td>
+									<td><input name="username" type="text" value=""></td>
+									<td colspan="2" class="check"><a href="http://jiangrzc.cn" target="blank">检测是否具有相同用户名</a></td>
+								</tr>
+								<tr>
+									<td><span>密码:</span></td>
+									<td><input name="password" type="password" value=""><span>*(至少6位)</span></td>
+									<td><span>真实姓名:</span></td>
+									<td><input name="rename" type="text" value=""><span>*</span></td>
+								</tr>
+								<tr>
+									<td><span>性别:</span></td>
+									<td>
+										<label><input name="sex" type="radio" value="male">男</label>
+										<label><input name="sex" type="radio" value="fmale">女</label>
+									</td>
+									<td><span>爱好:</span></td>
+									<td>
+										<label><input name="hobby" type="checkbox" value="reading">读书</label>
+										<label><input name="hobby" type="checkbox" value="film">看电影</label>
+									</td>
+								</tr>
+								<tr>
+									<td><span>证件类型:</span></td>
+									<td>
+										<select name="cards">
+											<option value="">身份证</option>	
+										</select>
+									</td>
+									<td><span>证件号码:</span></td>
+									<td>
+										<input name="number" type="text"><span>*</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<input type="submit" value="重置" class="button_left">
+										<input type="submit" value="注册" class="button_right">
+									</td>
+								</tr>
+
+							</table>
+
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						&copy; 2018 奋斗的土豆 
+					</td>
+				</tr>				
+		</table>
+
+	</body>
+</html>
