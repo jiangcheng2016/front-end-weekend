@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>栅格</title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+			margin: 0;
+			padding:0;
+		}
+		body{
+			background:url(bg.jpg) no-repeat;
+			background-size: cover;
+		}
+		.title img{
+			margin:50px;
+			width:30%;
+			min-width: 300px;
+		}
+		.container{
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.container *{
+			box-sizing: border-box;
+		}
+		.row:before,
+		.row:after{
+			content:"";
+			display: table;
+			clear: both;
+		}
+		[class *='col-']{
+			float: left;
+			min-height: 1px;
+			padding:12px;
+			font-size: 75px;
+			text-align: center;
+			color: red;
+		}
+		.col-2{
+			width:33.3%;
+		}
+
+		@media all and (max-width: 769px) {
+			.col-md-3{
+				width:50%;
+			}
+		}
+
+		@media all and (max-width: 600px){
+			.col-sm-6{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="title">
+		<img src="onepiece.jpg" alt="">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-2 col-md-3 col-sm-6">1</div>
+			<div class="col-2 col-md-3 col-sm-6">2</div>
+			<div class="col-2 col-md-3 col-sm-6">3</div>
+			<div class="col-2 col-md-3 col-sm-6">4</div>
+			<div class="col-2 col-md-3 col-sm-6">5</div>
+			<div class="col-2 col-md-3 col-sm-6">6</div>
+		</div>
+	</div>
+</body>
+</html>

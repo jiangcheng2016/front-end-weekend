@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>week7</title>
+	<style type="text/css">
+		body{
+			background-color: green;
+			padding-bottom:70px;
+		}
+		.test1{
+			width: 300px;
+			height: 300px;
+			background-color: lightgreen;
+		}
+		.test2{
+			position: relative;
+		}
+		.test2 img{
+			position: absolute;
+		}
+		.mask{
+			animation-name: weixin;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes weixin{
+			0% {opacity: 0;}
+			0.1% {opacity: 1;}
+			50% {opacity: 0;}
+			50.1% {opacity: 1;}
+			100% {opacity: 0;}
+		}
+		.test3{
+			margin-top:200px;
+			width: 100%;
+			background: #fff;
+		}
+		.test4 img{
+			animation-name: phone;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes phone{
+			0% {transform: rotate(0deg);}
+			2% {transform: rotate(15deg);}
+			4% {transform: rotate(-15deg);}
+			6% {transform: rotate(15deg);}
+			8% {transform: rotate(-15deg);}
+			10% {transform: rotate(15deg);}
+			12% {transform: rotate(-15deg);}
+			14% {transform: rotate(15deg);}
+			100% {stroke-dashoffset:0;}
+		}
+		.test5 {
+			position: relative;
+		}
+		.test5 img{
+			position: absolute;
+		}
+		.test5 .email-top img{
+			top:0;
+			left: 0;
+			transform: rotate(180deg);
+		}
+		.test5 .email-bottom img{
+			left: 2px;
+			top:25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="test1">
+		
+	</div>
+	<div class="test2">
+		<img src="images/weixin_2.svg">
+		<img class="mask" src="images/weixin_1.svg">
+	</div>
+	<div class="test3">
+		<svg height="300">
+			<line x1="0" y1="200" x2="300" y2="200" style="stroke:red;stroke-width:2;stroke-dashoffset:10px;" />
+		</svg>
+	</div>
+	<div class="test4">
+		<img src="images/shake_phone.svg">
+	</div>
+	<div class="test5">
+		<div class="email_inner"><img src="images/email_inner.svg"></div>
+		<div class="email_top"><img src="images/email_top.svg"></div>
+		<div class="email_bottom"><img src="images/email_bg.svg"></div>
+	</div>
+	<div class="test6">
+		
+	</div>
+</body>
+</html>
